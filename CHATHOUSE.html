@@ -1,0 +1,240 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<title>CHATHOUSE</title>
+
+  <style type="text/css">
+ 
+  #user{
+	  color:red;
+	  text-align:center;
+	  
+  }
+  #pass{
+	  color:red;
+	  text-align:center;
+  }
+  #dev{
+	  text-align:center;
+	  color:#0F0;
+  }
+  a{
+	  color:yellow;
+	  padding::5px;
+	  font-size:20px;
+  }
+  h1{
+	  color:#00C;
+	  border:thick;
+	  margin:auto;
+	  animation:cubic-bezier(x1,y1,x2,y2);
+	  text-decoration:underline;
+	  
+	  
+  }
+  body{
+	  background-image:url(plain_black_wallpaper_dark_grey_wallpapers_backgrounds__dark_pattern_wallpapers.jpg);
+	   border:thick dashed #FF0000;
+	  
+  }
+  .slide1{
+  background-image: url('bkgrnd1.png');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide2{
+  background-image: url('bkgrnd2.png');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide3{
+  background-image: url('bkgrnd3.png');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.carousel-caption h1{
+  font-size: 5.4em;
+  font-family: 'Pacifico', cursive;
+  padding-bottom: .4em;
+}
+.carousel-caption p{
+  font-size: 2em;
+}
+  </style>
+
+  <!-- Get the JQuery library
+  Jquery 1 & 2 are the same except JQuery 2 doesn't
+  support IE 6, 7, and 8 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+</head>
+<body bgcolor="#333333">
+<div id="wrapper">
+<div id="1">
+<br>
+<marquee><h1  id="head">CHATHOUSE</h1></marquee>
+<br><br><br>
+</div>
+<center><img src="1.jpg" id="accident" alt="accident"></center><br>
+
+<div class="navbar-header">
+<ul class="nav nav-pills">
+  <li><a href="Home.html">Home</a></li>
+  <li><a href="About Us.html">About Us</a></li>
+ 
+  <!-- Add a dropdown menu -->
+  <li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact
+    <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      <li><a data-toggle="tab" href="#ph">Phone</a></li>
+      <li><a data-toggle="tab" href="#mail">Email</a></li>
+      <li><a data-toggle="tab" href="#ment">Schedule Appointment</a></li>
+    </ul>
+  </li>
+  
+</ul>
+</div>
+<div class="tab-content">
+<br><br><br>
+  <div id="ph" class="tab-pane fade">
+   <h4> <p class="text-info">06572236207</p></h4>
+    <h4><p class="text-info">9523176456</p></h4>
+  </div>
+  <div id="mail" class="tab-pane fade">
+   <h4> <p class="text-info">kaushalag29@gmail.com </p></h4>
+  </div>
+  <div id="ment" class="tab-pane fade">
+   <h4> <p class="text-info">Select Your Year,Date,Month From The Calendar.</p></h4>
+    <h4 class="text-info">Schedule:</h4><br />
+<form><input type="text" name="birthday" id="birthday" placeholder="Click For Calendar">   <button type="submit" formtarget="_self" formaction="CHATHOUSE.html" class="btn btn-success btn-xs">Save</button></form><br /><br />
+
+  </div>
+  
+</div>
+<br><br><br>
+<form>
+<fieldset>
+<div id="user">
+Username:<input type="email" placeholder="Enter Your Username"></div>
+<div id="pass">
+Password: <input type="password" placeholder="Enter Your Password"</div>
+</fieldset>
+</form>
+<br>
+<center><form><button id="submit" type="submit" class="btn btn-success btn-xs" formtarget="_self"  formaction="Welcome To ChatHouse.html">Login</button></form></center>
+<br>
+<center><form><button type="submit"  class="btn btn-success btn-xs" formtarget="_self" formaction="Sign Up.html">Sign Up</button></form></center>
+<br>
+<br>
+<br>
+<div id="dev">
+<h2>Created By --> Kaushal Agarwal</h2>
+<h3>A STUDENT OF BIT MESRA</h3>
+</div>
+
+<div id="theCarousel" class="carousel slide" data-ride="carousel">
+ 
+  <!-- Define how many slides to put in the carousel -->
+  <ol class="carousel-indicators">
+    <li data-target="#theCarousel" data-slide-to="0" class="active"> </li >
+    <li data-target="#theCarousel" data-slide-to="1"> </li>
+    <li data-target ="#theCarousel" data-slide-to="2"> </li>
+  </ol >
+ 
+  <!-- Define the text to place over the image -->
+  <div class="carousel-inner">
+    <div class="item active" >
+    <div class ="slide1"></div>
+    <div class="carousel-caption">
+      <h1>Hi!</h1>
+      <p><h2>Let's Begin!</h2></p>
+     
+    </div>
+  </div>
+  <div class="item">
+  <div class="slide2"></div>
+  <div class="carousel-caption">
+    <h1>Thousands of Friends</h1>
+    <p><h2>Waiting For U!!</h2></p>
+  </div>
+  </div>
+  <div class="item">
+  <div class="slide3"></div>
+  <div class="carousel-caption">
+  <h1>Good Luck!!</h1>
+  <p><h2>And they are All Free</h2></p>
+  </div>
+  </div>
+  </div>
+ 
+  <!-- Set the actions to take when the arrows are clicked -->
+  <a class="left carousel-control" href="#theCarousel" data-slide="prev">
+  <span class="glyphicon glyphicon-chevron-left"> </span>
+  </a>
+  <a class="right carousel-control" href="#theCarousel" data-slide="next">
+  <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+  </div>
+ 
+
+<script type="text/javascript">
+
+$("document").ready(function() {
+
+ $("#birthday").datepicker({
+    // Show month dropdown
+    changeMonth: true,
+    // Show year dropdown
+    changeYear: true,
+    dateFormat: "MM dd, yy",
+    // Number of months to display
+    numberOfMonths: 1,
+    // Define maxDate
+    maxDate: 365,
+    // Define minDate
+    minDate: -3650
+  });
+   var accidentImgs = ["1.jpg", "2.png", "3.jpg", "4.jpg","5.png"];
+
+  var focusImg = 1;
+
+  $("#accident").click(function() {
+
+    var image = accidentImgs[focusImg];
+    focusImg++;
+    if(focusImg > 4){
+      focusImg = 0;
+    }
+
+    $("#accident").attr("src", image);
+
+  });
+
+
+}); <!-- End of JQuery Code -->
+
+</script>
+
+</div> <!-- End of wrapper -->
+
+<!-- Most common CSS attributes
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+  background, background-attachment, background-color, background-image, background-repeat, border, border-bottom, border-color, border-style, border-bottom-color, border-bottom-style, border-bottom-width, border-left-color, border-left-style, border-left-width, border-right-color, border-right-style, border-right-width, border-top-color, border-top-style, border-top-width, box-shadow, color, columns, direction, float, font-family, font-size, font-style, font-weight, height, letter-spacing, line-height, list-style-type, list-style-image, list-style-position, margin, margin-bottom, margin-top, margin-right,margin-left, opacity, padding-bottom, padding-top, padding-right, padding-left, text-align, text-decoration, text-decoration-color, text-decoration-line, text-decoration-style, text-indent, text-orientation, text-shadow, text-transform, vertical-align, visibility, width, word-spacing, z-index
+  -->
+ 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<title>CHATHOUSE</title>
+
+  <style type="text/css">
+ 
+
+ 
+  a{
+	  color:yellow;
+	  padding::5px;
+	  font-size:20px;
+  }
+  label{
+	  color:orange;
+  }
+  h1{
+	  color:#00C;
+	  border:thick;
+	  margin:auto;
+	  animation:cubic-bezier(x1,y1,x2,y2);
+	  text-decoration:underline;
+	  
+	  
+  }
+  body{
+	  background-image:url(plain_black_wallpaper_dark_grey_wallpapers_backgrounds__dark_pattern_wallpapers.jpg);
+	   border:thick dashed #FF0000;
+	  
+  }
+  
+  </style>
+
+  <!-- Get the JQuery library
+  Jquery 1 & 2 are the same except JQuery 2 doesn't
+  support IE 6, 7, and 8 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+</head>
+<body bgcolor="#333333">
+<div id="wrapper">
+<div id="1">
+<br>
+<marquee><h1  id="head">Sign Up</h1></marquee>
+<br><br><br>
+</div>
+<center><img src="1.jpg" id="accident" alt="accident"></center><br>
+
+<div class="navbar-header">
+<ul class="nav nav-pills">
+  <li><a href="Home.html">Home</a></li>
+  <li><a href="About Us.html">About Us</a></li>
+ 
+  <!-- Add a dropdown menu -->
+  <li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact
+    <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      <li><a data-toggle="tab" href="#ph">Phone</a></li>
+      <li><a data-toggle="tab" href="#mail">Email</a></li>
+      <li><a data-toggle="tab" href="#ment">Schedule Appointment</a></li>
+    </ul>
+  </li>
+  
+</ul>
+</div>
+<div class="tab-content">
+<br><br><br>
+  <div id="ph" class="tab-pane fade">
+   <h4> <p class="text-info">06572236207</p></h4>
+    <h4><p class="text-info">9523176456</p></h4>
+  </div>
+  <div id="mail" class="tab-pane fade">
+   <h4> <p class="text-info">kaushalag29@gmail.com </p></h4>
+  </div>
+  <div id="ment" class="tab-pane fade">
+   <h4> <p class="text-info">Select Your Year,Date,Month From The Calendar.</p></h4>
+    <h4 class="text-info">Schedule:</h4><br />
+<form><input type="text" name="birthday" id="birthday" placeholder="Click For Calendar">   <button type="submit" formtarget="_self" formaction="CHATHOUSE.html" class="btn btn-success btn-xs">Save</button></form><br /><br />
+
+  </div>
+  
+</div>
+<br><br><br>
+<center>
+<form>
+<fieldset>
+<label>First Name:
+<input type="text" placeholder="Enter Your First Name">
+</label><br><label>Last Name:
+<input type="text" placeholder="Enter Your Last Name"></label><br>
+<label>Sex: Male-<input type="checkbox"></label><label> Female-<input type="checkbox"></label><br>
+<label>Date Of Birth:<input type="text" name="birthday" id="dob" placeholder="Click For Calendar"></label><br>
+<label>Country:<select id="countryId" class="countries" name="country">
+<option value="">Select Country</option>
+ 
+ 
+ 
+</select></label>
+  <label>State:<select id="stateId" class="states" name="state">
+<option value="">Select State</option>
+ 
+ 
+ 
+</select></label>
+  <label>City:<select id="cityId" class="cities" name="city">
+<option value="">Select City</option>
+ </select></label><br>
+<label>Mobile Number:<input type="number" placeholder="Enter Your Number"</label>
+<br>
+<label>UserName:<input type="email" placeholder="name_@name.com"></label><br>
+<label>Password:<input type="password"></label><br>
+<center><input type="checkbox">I agree to share the all the above contents with us.</center><br>
+<center><button type="submit" formtarget="_self" formaction="Login.html" class="btn btn-success btn-xs">Login</button></center>
+
+</fieldset>
+</form>
+</center>
+<br>
+
+ 
+
+<script type="text/javascript">
+
+$("document").ready(function() {
+
+ $("#birthday").datepicker({
+    // Show month dropdown
+    changeMonth: true,
+    // Show year dropdown
+    changeYear: true,
+    dateFormat: "MM dd, yy",
+    // Number of months to display
+    numberOfMonths: 1,
+    // Define maxDate
+    maxDate: 365,
+    // Define minDate
+    minDate: -3650
+  });
+  $("#dob").datepicker({
+    // Show month dropdown
+    changeMonth: true,
+    // Show year dropdown
+    changeYear: true,
+    dateFormat: "MM dd, yy",
+    // Number of months to display
+    numberOfMonths: 1,
+    // Define maxDate
+    maxDate: 365,
+    // Define minDate
+    minDate: -3650
+  });
+ 
+
+   var accidentImgs = ["1.jpg", "2.png", "3.jpg", "4.jpg","5.png"];
+
+  var focusImg = 1;
+
+  $("#accident").click(function() {
+
+    var image = accidentImgs[focusImg];
+    focusImg++;
+    if(focusImg > 4){
+      focusImg = 0;
+    }
+
+    $("#accident").attr("src", image);
+
+  });  
+
+  
+
+
+}); <!-- End of JQuery Code -->
+
+</script>
+
+</div> <!-- End of wrapper -->
+
+<!-- Most common CSS attributes
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+  background, background-attachment, background-color, background-image, background-repeat, border, border-bottom, border-color, border-style, border-bottom-color, border-bottom-style, border-bottom-width, border-left-color, border-left-style, border-left-width, border-right-color, border-right-style, border-right-width, border-top-color, border-top-style, border-top-width, box-shadow, color, columns, direction, float, font-family, font-size, font-style, font-weight, height, letter-spacing, line-height, list-style-type, list-style-image, list-style-position, margin, margin-bottom, margin-top, margin-right,margin-left, opacity, padding-bottom, padding-top, padding-right, padding-left, text-align, text-decoration, text-decoration-color, text-decoration-line, text-decoration-style, text-indent, text-orientation, text-shadow, text-transform, vertical-align, visibility, width, word-spacing, z-index
+  -->
+ 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="http://iamrohit.in/lab/js/location.js"></script>
+
+
+</body>
+</html>
+

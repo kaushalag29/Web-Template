@@ -1,0 +1,140 @@
+
+
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <title>HOME</title>
+
+  <style type="text/css">
+  body{
+	  background-image:url(plain_black_wallpaper_dark_grey_wallpapers_backgrounds__dark_pattern_wallpapers.jpg);
+	   border:thick dashed #FF0000;
+  }
+  h2{
+	  margin:auto;
+	  padding:5px;
+	  text-align:center;
+  }
+  a{
+	  color:yellow;
+	  padding::5px;
+	  font-size:20px;
+  }
+  h1{
+	  color:#00C;
+	  border:thick;
+	  margin:auto;
+	  animation:cubic-bezier(x1,y1,x2,y2);
+	  text-decoration:underline;
+	  
+	  
+  }
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  </head>
+ <body>
+ <br>
+  <marquee><h1>About Us</h1></marquee>
+ <div>
+ <br><br><br>
+ <center><img src="1.jpg" id="accident" alt="accident"></center><br>
+<div class="navbar-header">
+<ul class="nav nav-pills">
+  <li><a href="Home.html">Home</a></li>
+  <li><a class="disabled">About Us</a></li>
+ 
+  <!-- Add a dropdown menu -->
+  <li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact
+    <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      <li><a data-toggle="tab" href="#ph">Phone</a></li>
+      <li><a data-toggle="tab" href="#mail">Email</a></li>
+      <li><a data-toggle="tab" href="#ment">Schedule Appointment</a></li>
+    </ul>
+  </li>
+  
+</ul>
+
+ </div>
+ <div class="tab-content">
+<br><br><br><br>
+  <div id="ph" class="tab-pane fade">
+   <h4> <p class="text-info">06572236207</p></h4>
+    <h4><p class="text-info">9523176456</p></h4>
+  </div>
+  <div id="mail" class="tab-pane fade">
+   <h4> <p class="text-info">kaushalag29@gmail.com </p></h4>
+  </div>
+  <div id="ment" class="tab-pane fade">
+   <h4> <p class="text-info">Select Your Year,Date,Month From The Calendar.</p></h4>
+    <h4 class="text-info">Schedule:</h4><br />
+<form><input type="text" name="birthday" id="birthday" placeholder="Click For Calendar">   <button type="submit" formtarget="_self" formaction="CHATHOUSE.html" class="btn btn-success btn-xs">Save</button></form><br /><br />
+
+  </div>
+  
+</div>
+<br><br><br>
+ <div>
+<h2> <p align="center"><span class="text-danger">Our Comapany is new in market and hopes to progress yearly in an adequate manner.</span></p></h2>
+<h2> <p align="center"><span class="text-info">The owner of company is myself <a href="biodata">"Kaushal Kumar Agarwal"</a> a student of BIT MESRA,RANCHI,JHARKHAND-835215.</span></p></h2>
+ </div>
+ <br><br><br>
+ <center><form> <button type="submit"  formtarget="_self" formaction="CHATHOUSE.html" class="btn btn-success btn-xs">Back To ChatHouse</button></form></center>
+<script type="text/javascript">
+
+$("document").ready(function() {
+
+ $("#birthday").datepicker({
+    // Show month dropdown
+    changeMonth: true,
+    // Show year dropdown
+    changeYear: true,
+    dateFormat: "MM dd, yy",
+    // Number of months to display
+    numberOfMonths: 1,
+    // Define maxDate
+    maxDate: 365,
+    // Define minDate
+    minDate: -3650
+  });
+ var accidentImgs = ["1.jpg", "2.png", "3.jpg", "4.jpg","5.png"];
+
+  var focusImg = 1;
+
+  $("#accident").click(function() {
+
+    var image = accidentImgs[focusImg];
+    focusImg++;
+    if(focusImg > 4){
+      focusImg = 0;
+    }
+
+    $("#accident").attr("src", image);
+
+  });
+}); <!-- End of JQuery Code -->
+
+</script>
+ 
+</div>
+
+
+<!-- End of wrapper -->
+
+<!-- Most common CSS attributes
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+  background, background-attachment, background-color, background-image, background-repeat, border, border-bottom, border-color, border-style, border-bottom-color, border-bottom-style, border-bottom-width, border-left-color, border-left-style, border-left-width, border-right-color, border-right-style, border-right-width, border-top-color, border-top-style, border-top-width, box-shadow, color, columns, direction, float, font-family, font-size, font-style, font-weight, height, letter-spacing, line-height, list-style-type, list-style-image, list-style-position, margin, margin-bottom, margin-top, margin-right,margin-left, opacity, padding-bottom, padding-top, padding-right, padding-left, text-align, text-decoration, text-decoration-color, text-decoration-line, text-decoration-style, text-indent, text-orientation, text-shadow, text-transform, vertical-align, visibility, width, word-spacing, z-index
+  -->
+  
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
